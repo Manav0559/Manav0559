@@ -15,7 +15,7 @@ I build low-latency trading engines in **C++** and research market microstructur
 
 ### Featured Projects
 
-#### ⚡ [HFT Limit Order Book (C++)](https://github.com/Manav0559/HFT-OrderBook-CPP)
+#### [HFT Limit Order Book (C++)](https://github.com/Manav0559/HFT-OrderBook-CPP)
 A low-latency matching engine simulating a high-frequency crypto exchange.
 * **Core Architecture:** Implements standard Price-Time priority matching using `std::map` and `std::vector` for O(log n) efficiency.
 * **Live Market Data:** Features a custom Python feed handler that streams real-time BTC/USDT depth from Binance.
