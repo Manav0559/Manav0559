@@ -22,6 +22,3 @@ A low-latency matching engine simulating a high-frequency crypto exchange.
 * **Performance:** Optimized with fixed-point integer arithmetic to eliminate floating-point latency and errors.
 
 ---
-
-### GitHub Stats
-![Manav's GitHub stats](https://github-readme-stats.vercel.app/api?username=Manav0559&show_icons=true&theme=dark&hide_border=true)
