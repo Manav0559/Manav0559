@@ -1,15 +1,6 @@
 <div align="center">
   
   # Hi, I'm Manav ❤️
-  
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2E91E3&center=true&vCenter=true&width=600&lines=Quant+Developer+%40+IIT+Patna;Building+Low-Latency+Systems;Modelling+Market+Microstructure;C%2B%2B+for+Speed+%7C+Python+for+Alpha" alt="Typing SVG" />
-  </a>
-
-  <p align="center">
-    <b>Mathematics & Computing Undergraduate @ IIT Patna</b><br>
-    <i>Bridging the gap between Stochastic Calculus and Bare-Metal C++ Engineering.</i>
-  </p>
 
 </div>
 
