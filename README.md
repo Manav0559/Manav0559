@@ -1,6 +1,6 @@
 <div align="center">
   
-  # Hi, I'm Manav ❤️
+  # Hi, I'm Manav 
 
 </div>
 
