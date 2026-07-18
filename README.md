@@ -1,59 +1,44 @@
 <div align="center">
-  
-  # Hi, I'm Manav 
+
+# Hi, I'm Manav
+
+Building trading infrastructure where every statistic is honest by construction.
+
+📫 [manavsingla1728@gmail.com](mailto:manavsingla1728@gmail.com)
 
 </div>
 
 ---
 
-### My Core Focus
+### Flagship — [multi-asset-backtester](https://github.com/Manav0559/multi-asset-backtester)
 
-I operate at the intersection of **High-Frequency Trading (HFT)** and **Deep Learning**. My goal is to build autonomous trading agents that can reason about market liquidity and execute trades with sub-millisecond latency.
+**🔴 Live demo → [multi-asset-backtester.vercel.app](https://multi-asset-backtester.vercel.app)**
+*(free-tier backend sleeps when idle — first load takes ~30–60s, then it's fast)*
 
-<div align="center">
+Multi-asset backtesting + multiplayer paper trading, deployed end-to-end:
 
-| **The Engine (Systems)** | **The Brain (Quant)** |
-| :--- | :--- |
-| **Low-Latency C++** | **Stochastic Calculus** |
-| **Market Data Feeds** | **Deep Learning (CNN/LSTM)** |
-| **Matching Engines** | **Time-Series Analysis** |
-| **Network Optimization** | **Market Microstructure** |
+- **No-lookahead engine** — `position = signal.shift(1)` structurally, for user-submitted code too
+- **Honest statistics** — Deflated Sharpe reported against the *actual* number of trials attempted, purged + embargoed walk-forward CV, triple-barrier meta-labeling, VaR/ES with Cornish-Fisher tails, factor attribution before anything is called alpha
+- **Market frictions** — commission, spread, slippage, and square-root market impact in backtests; Reg-T-style short margin and 2× leverage on a row-locked, Decimal-exact shared ledger in paper trading
+- **Bring-your-own-Python sandbox** — AST allowlist (no imports/dunders/exec) with line-numbered rejections at submission time
+- FastAPI · PostgreSQL · Next.js · WebSockets · **181 tests · CI green · $0/month single-process deploy**
 
-</div>
+### Now building — [itch-lob-engine](https://github.com/Manav0559/itch-lob-engine)
 
----
-
-### Technology Stack
-
-<div align="center">
-
-| **Languages** | **Quant Libraries** | **Infrastructure** |
-| :---: | :---: | :---: |
-| ![C++](https://img.shields.io/badge/C++17-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
-| ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) | ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) |
-| ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white) | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) | ![ZeroMQ](https://img.shields.io/badge/ZeroMQ-DF0000?style=for-the-badge&logo=zeromq&logoColor=white) |
-
-</div>
+NASDAQ TotalView-ITCH 5.0 order-book reconstruction in C++20: exchange binary
+protocol parsing, order-id book, Catch2 tests, Linux + macOS CI.
+**Project rule: no performance number ships unless a committed, reproducible
+benchmark produced it.**
 
 ---
 
-### Featured Research & Projects
+### How I evaluate strategies
 
-#### [DeepLOB-HFT-Bot](https://github.com/Manav0559/DeepLOB-HFT-Bot)
-> *A Hybrid Execution System combining C++ speed with Deep Learning intelligence.*
-- **Architecture:** Decoupled C++17 execution engine + Python PyTorch Inference Server.
-- **Strategy:** DeepLOB (Deep Limit Order Book) utilizing CNNs for spatial features and LSTMs for temporal patterns.
-- **Performance:** **57.9% Win Rate** | **1.55 Profit Factor** on Binance Futures (Live Test).
+Purged walk-forward CV with embargo ≥ label horizon · Deflated Sharpe against
+counted trials · transaction costs including square-root impact · factor
+attribution to separate alpha from exposure · negative results reported, not
+discarded.
 
-#### [HFT-Limit-Order-Book](https://github.com/Manav0559/YOUR-LOB-REPO-NAME)
-> *A simulation of a NASDAQ-style matching engine optimized for cache locality.*
-- **Core:** Price-Time Priority matching algorithm using `std::vector` and memory pools.
-- **Optimization:** Fixed-point arithmetic to eliminate floating-point non-determinism.
-- **Throughput:** Capable of processing 10k+ orders/second in single-threaded backtests.
+### Stack
 
----
-
-<div align="center">
-  
-
-</div>
+`Python` (FastAPI, pandas, scikit-learn, XGBoost, PyTorch) · `C++20` · `TypeScript` (Next.js) · `PostgreSQL` · `Docker` · `GitHub Actions`
